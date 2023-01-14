@@ -8,6 +8,7 @@
 }
 img{
     width: 100%;
+    height: 100%;
 }
 .section-description{
     margin: 22px 0% 30px 0%;
@@ -27,7 +28,10 @@ img{
 /* header style */
 header{
     background: #FF900E1A;
-    padding: 50px 228px;
+}
+.header-container{
+    width: 80%;
+    margin: 0 auto;
 }
 .header{
     display: flex;
@@ -68,7 +72,8 @@ header{
 }
 /* team section style */
 main{
-    margin: 0px 240px;
+    width: 80%;
+    margin: 0 auto;
 }
 .team{
     margin: 85px 10px;
@@ -127,6 +132,22 @@ main{
 .features-image-container{
     flex: 1;
 }
+.experience{
+    padding: 40px;
+    height: 200px;
+    position: relative;
+    left: 48%;
+    top: -120px;
+    z-index: 1;
+}
+.experience h2{
+    font-size: 60px;
+    font-weight: 700;
+}
+.experience p{
+    font-size: 15px;
+    font-weight: 500;
+}
 /* Some Facts section  */
 .some-facts{
     margin-top: 160px;
@@ -179,10 +200,18 @@ main{
 .sponspors-item img{
     height: 50px;
     width: 150px;
+    filter: grayscale(100%);
 }
 /* footer section style */
 footer{
-    margin: 150px 240px 200px 240px;
+    margin: 150px 0px 200px 0px;
+    
+    border-radius: 8px;
+    text-align: center;
+}
+.footer-container{
+    width: 80%;
+    margin: 0 auto;
     background: #FFF4E7;
     border-radius: 8px;
     text-align: center;
@@ -191,5 +220,27 @@ footer{
     font-size: 20px;
     color: #424242;
     padding: 40px 0px;
-
 }
+/* raspobsib style aria  */
+@media screen and (max-width:576px) {
+    .header{
+        margin-bottom: 30px;
+    }
+    .banner-text-area{
+        margin: 0px;
+    }
+    .team, .features, .some-facts-container, .sponspors-container, .header, .manu{
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    h3{
+        font-size: 40px;
+    }
+    .experience{
+        left: 0%;
+        top: 0px;
+        z-index: 0;
+        margin: 20px auto;
+    }
+}
+
