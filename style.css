@@ -228,6 +228,11 @@ main{
     padding: 30px 20px;
     box-shadow: 1px 1px 5px #bbbbbb;
     text-align: center;
+    transition: background-color 1.5s;
+    border-radius: 10px;
+}
+.services:hover{
+    background-color: #FF900E;
 }
 .services-img{
     width: 45px;
