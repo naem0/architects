@@ -171,7 +171,6 @@ main{
     border: 1px solid #FF900E;
     border-radius: 8px;
     transition: padding 1s;
- /* transform: rotate(90deg); */
 }
 .some-facts-item:hover{
     padding: 30px 25px;
@@ -250,8 +249,7 @@ main{
 }
 /* --------footer section style------- */
 footer{
-    margin: 150px 0px;
-    
+    margin: 150px 0px; 
 }
 .footer-container{
     width: 80%;
