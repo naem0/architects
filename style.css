@@ -14,7 +14,7 @@ img{
     margin: 22px 0% 30px 0%;
     color: #727272;
 }
-/* primary-button */
+/* -------primary-button--------- */
 .primary-button{
     height: 64px;
     border-radius: 8px;
@@ -25,7 +25,7 @@ img{
     font-size: 20px;
     font-weight: 600;
 }
-/* header style */
+/* ----------header style------- */
 header{
     background: #FF900E1A;
 }
@@ -38,6 +38,7 @@ header{
     justify-content: space-between;
     align-items: center;
     margin-bottom: 100px;
+    padding-top: 50px;
 }
 .websit-title h3{
     font-weight: 700;
@@ -58,7 +59,7 @@ header{
     text-decoration: none;
     color: black;
 }
-/* banner style */
+/* ---------banner style---------- */
 .banner-text-area{
     text-align: center;
     margin: 0px 15%;
@@ -70,7 +71,7 @@ header{
 .banner-image{
     margin-top: 50px;
 }
-/* team section style */
+/* ---------team section style--------- */
 main{
     width: 80%;
     margin: 0 auto;
@@ -102,7 +103,7 @@ main{
 .orange-text{
     color: #FF900E;
 }
-/* Features section style */
+/* --------Features section style------- */
 .features{
     display: flex;
     gap: 140px;
@@ -148,9 +149,9 @@ main{
     font-size: 15px;
     font-weight: 500;
 }
-/* Some Facts section  */
+/* -------Some Facts section---------  */
 .some-facts{
-    margin-top: 160px;
+    margin-top: 60px;
 
 }
 .some-facts-title{
@@ -162,13 +163,19 @@ main{
     display: flex;
     justify-content: space-around;
     text-align: center;
-    align-items: center;margin: 100px 0px;
+    align-items: center;
+    margin: 100px 0px;
 }
 .some-facts-item{
     padding: 40px 35px;
     border: 1px solid #FF900E;
     border-radius: 8px;
-    /* transform: rotate(90deg); */
+    transition: padding 1s;
+ /* transform: rotate(90deg); */
+}
+.some-facts-item:hover{
+    padding: 30px 25px;
+    background-color:#FF900E;
 }
 .some-facts-item h4{
     font-size: 45px;
@@ -182,7 +189,7 @@ main{
 .some-facts-item img{
     width: 45px;
 }
-/* Sponspors section style */
+/* ---------Sponspors section style--------- */
 .ponspors-text-container{
     text-align: center;
 }
@@ -202,14 +209,15 @@ main{
     width: 150px;
     filter: grayscale(100%);
 }
-/* services section style */
-.services{
+/* --------services section style-------- */
+.servicess p{
     text-align: center;
 }
 .servicess-title{
     font-weight: 700;
     font-size: 40px;
     margin: 80px 0px 40px 0px;
+    text-align: center;
 }
 .services-container{
     display: grid;
@@ -235,7 +243,7 @@ main{
 .services-description{
     color: #444343;
 }
-/* footer section style */
+/* --------footer section style------- */
 footer{
     margin: 150px 0px;
     
@@ -246,13 +254,19 @@ footer{
     background: #FFF4E7;
     border-radius: 8px;
     text-align: center;
+    
 }
 .footer-text{
     font-size: 20px;
     color: #424242;
     margin: 0 auto;
+    padding: 40px;
 }
-/* raspobsib style aria  */
+
+/* ------raspobsib style aria------  */
+
+/*-------- small devices------- */
+
 @media screen and (max-width:576px) {
     .header{
         margin-bottom: 30px;
@@ -264,7 +278,7 @@ footer{
         flex-direction: column;
         row-gap: 30px;
     }
-    .services-container{
+    .services-container, .team-image-aria{
         grid-template-columns: repeat(1, 1fr);
     }
     h3{
@@ -276,6 +290,35 @@ footer{
         z-index: 0;
         margin: 20px auto;
     }
-    
+}
+/* --------medium debice-------- */
+
+@media screen and (min-width:577px) and (max-width:768px) {
+    .header{
+        margin-bottom: 30px;
+    }
+    .banner-text-area{
+        margin: 0px;
+    }
+    .team, .features, .sponspors-container, .header{
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    .some-facts-container{
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    .services-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    h3{
+        font-size: 40px;
+    }
+    .experience{
+        left: 0%;
+        top: 0px;
+        z-index: 0;
+        margin: 20px auto;
+    }
 }
 
